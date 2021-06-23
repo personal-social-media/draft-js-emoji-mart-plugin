@@ -7,7 +7,7 @@ import { Data, Emoji as DataEmoji } from 'emoji-mart/dist-es/utils/data';
 import { EmojiSet, EmojiSheetSize } from 'emoji-mart/dist-es/utils/shared-props';
 import { EmojiData, BaseEmoji, CustomEmoji } from 'emoji-mart/dist-es/utils/emoji-index/nimble-emoji-index';
 import { EditorState } from 'draft-js';
-import { EditorPlugin } from 'draft-js-plugins-editor';
+import { EditorPlugin } from '@draft-js-plugins/editor';
 
 import attachImmutableEntitiesToEmojis from './modifiers/attachImmutableEntitiesToEmojis';
 import addEmoji from './modifiers/addEmoji';
