@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { EditorState } from 'draft-js';
-import Editor from 'draft-js-plugins-editor';
+import Editor from '@draft-js-plugins/editor';
 
 import createEmojiMartPlugin from '../lib'; // type 'draft-js-emoji-mart-plugin' for real usage
 import data from 'emoji-mart/data/apple.json';

@@ -1,6 +1,6 @@
 {
-  "name": "draft-js-emoji-mart-plugin",
-  "version": "1.0.1",
+  "name": "psm-draft-js-emoji-mart-plugin",
+  "version": "1.0.2",
   "description": "Emoji-mart plugin for DraftJS.",
   "browserslist": "> 0.25%, not dead",
   "main": "lib",
@@ -25,19 +25,19 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --ignore '**/*.d.ts' --source-maps",
     "lint": "eslint ./src ./stories",
-    "storybook": "start-storybook -p 6006 --no-dll",
-    "build-storybook": "build-storybook --no-dll"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/zamarawka/draft-js-emoji-mart-plugin.git"
+    "url": "git+ssh://git@github.com/personal-social-media/draft-js-emoji-mart-plugin.git"
   },
-  "author": "zamarawka <somebody.told@mail.ru> (https://github.com/zamarawka)",
+  "author": "Personal Social Media <contact@personalsocialmedia.net> (https://github.com/personal-social-media)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zamarawka/draft-js-emoji-mart-plugin/issues"
+    "url": "https://github.com/personal-social-media/draft-js-emoji-mart-plugin/issues"
   },
-  "homepage": "https://github.com/zamarawka/draft-js-emoji-mart-plugin#readme",
+  "homepage": "https://github.com/personal-social-media/draft-js-emoji-mart-plugin#readme",
   "dependencies": {
     "emoji-regex": "^7.0.3",
     "find-with-regex": "^1.1.3"
@@ -55,10 +55,11 @@
     "@babel/plugin-transform-react-jsx": "^7.12.5",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",
-    "@storybook/addon-actions": "^6.0.28",
-    "@storybook/addon-essentials": "^6.0.28",
-    "@storybook/addon-links": "^6.0.28",
-    "@storybook/react": "^3.4.12",
+    "@draft-js-plugins/editor": "*",
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/react": "^6.3.0",
     "@types/draft-js": "^0.10.44",
     "@types/emoji-mart": "^3.0.4",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
